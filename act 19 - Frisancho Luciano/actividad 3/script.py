@@ -1,43 +1,23 @@
 """
-3. Definir una lista y almacenar los nombres de 3 empleados.
-Por otro lado definir otra lista y almacenar en cada elemento una sublista con los
-números de días del mes que el empleado faltó.
-Imprimir los nombres de empleados y los días que faltó.
-Mostrar los empleados con la cantidad de inasistencias.
-Finalmente mostrar el nombre o los nombres de empleados que faltan menos
-días.
+3. Confeccionar una función que reciba entre 2 y 5 enteros. La misma nos
+debe retornar la suma de dichos valores. Debe tener tres parámetros por
+defecto.
 """
-empleado = []
-faltas = []
-for x in range(3):
-    nombre=input(f"Ingrese el nombre del empleado {x+1}: ")
-    empleado.append(nombre)
-    dias_str = input(f"Ingrese los dias que falto {nombre} (separados por coma): ")
-    dias_lista = dias_str.split(",") 
 
-    sublista = []
-    for d in dias_lista:
-        sublista.append(int(d))  
+def cal_suma(a1,a2,a3=0,a4=0,a5=0):
+    suma = a1 + a2 + a3 + a4 + a5    
+    return suma
 
-    faltas.append(sublista) 
+def mostra(resultado):
+    print("-RESULTADO-")
+    print("la suma de dichos valores es : ")
+    print(resultado)
 
-print("Dias que falto cada empleado")
+print("ingrese datos:")
+n1 = int(input("ingrese valor del primer numero : "))
+n2 = int(input("ingrese valor del segundo numero : "))
+n3 = int(input("ingrese valor del tercer numero : "))
 
-for x in range(3):
-    print(f"{empleado[x]} faltó los días: {faltas[x]}")
+total = cal_suma(n1,n2,n3)
 
-print("Cantidad de inasistencias de cada empleado")
-
-for x in range(3):
-    print(f"{empleado[x]}: {len(faltas[x])} inasistencias")  
-
-menor = len(faltas[0]) 
-for x in range(1, 3):
-    if len(faltas[x]) < menor:  
-        menor = len(faltas[x])  
-
-
-print("Empleados que faltan menos días")
-for x in range(3):
-    if len(faltas[x]) == menor:
-        print(f"{empleado[x]} con {menor} inasistencias")
+mostra(total)
