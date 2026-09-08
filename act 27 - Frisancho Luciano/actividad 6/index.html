@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 6</title>
+    <script src="./src/script.js" defer></script>
+</head>
+<body>
+    <form>
+        <h2>test de los ganadores del derby de japon</h2>
+
+        <p>1. ¿quien gano en 1932?</p>
+        <select id="p1">
+            <option value="">-- Seleccionar --</option>
+            <option value="correcto">Wakataka</option>
+            <option value="incorrecto">Flame Mor</option>
+            <option value="incorrecto">Tokumasa</option>
+        </select>
+
+        <p>2. ¿quien gano en 1966?</p>
+        <select id="p2">
+            <option value="">-- Seleccionar --</option>
+            <option value="incorrecto">Long Ace</option>
+            <option value="correcto">Teito O</option>
+            <option value="incorrecto">Golden Wave</option>
+        </select>
+
+        <p>3.¿quien gano en 1982?</p>
+        <select id="p3">
+            <option value="">-- Seleccionar --</option>
+            <option value="incorrecto">No hubo carrera</option>
+            <option value="incorrecto">Meizui</option>
+            <option value="correcto">Bamboo Atlas</option>
+        </select>
+
+
+        <p>4.¿quien gano en 1946?</p>
+        <select id="p4">
+            <option value="">-- Seleccionar --</option>
+            <option value="correcto">No hubo carrera</option>
+            <option value="incorrecto">Hikaru Meiji</option>
+            <option value="incorrecto">Daigo Homare</option>
+        </select>
+
+        <br><br>
+        <input type="button" value="Calcular Resultado" onclick="evaluarExamen()">
+
+        <p id="resultado"></p>
+    </form>
+</body>
+</html>
