@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+    <script src="./src/script.js" defer></script>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <h1>Preferencias de Usuario</h1>
+    <form>
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        </p>
+        <p>
+            <label for="colorFondo">Color de fondo:</label><br>
+            <select id="colorFondo">
+                <option value="">-- Seleccionar color --</option>
+                <option value="lightblue">Azul claro</option>
+                <option value="lightgreen">Verde claro</option>
+                <option value="lightyellow">Amarillo claro</option>
+                <option value="pink">Rosa</option>
+            </select>
+        </p>
+        <button type="button" onclick="guardarPreferencias()">Guardar Preferencias del Usuario</button>
+    </form>
+    <h2 id="mensajeSaludo"></h2>
+</body>
+</html>

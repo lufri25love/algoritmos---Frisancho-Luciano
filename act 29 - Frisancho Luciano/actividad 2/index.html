@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Carrito de Compras</h2>
+        <p>Total de productos en el carrito: <span id="contador">0</span></p>
+    </header>
+
+    <main class="productos">
+        <div class="producto">
+            <h3>Producto 1</h3>
+            <button type="button" onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Producto 2</h3>
+            <button type="button" onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Producto 3</h3>
+            <button type="button" onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+    </main>
+
+    <button type="button" id="btnVaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+</body>
+</html>

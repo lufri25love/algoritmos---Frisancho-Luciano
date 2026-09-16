@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/script.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Borrador de Notas de Sesión</h2>
+        <textarea id="notaInput" rows="5" placeholder="Escribe tu nota aquí..."></textarea>
+        <div class="botones">
+            <button type="button" id="btnGuardar" onclick="guardarNota()">Guardar Nota</button>
+            <button type="button" id="btnBorrar" onclick="borrarNota()">Borrar Nota</button>
+        </div>
+        <h3>Nota Guardada:</h3>
+        <div id="contenedorNota"></div>
+    </div>
+</body>
+</html>
